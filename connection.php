@@ -1,16 +1,13 @@
 <?php
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "Bigstep@123";
-    $dbname = "hrone";
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password,$dbname);
 
-    // Check connection
-    if ($conn->connect_error) {
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-    }
+}
 
-    $conn->autocommit(FALSE);
+$conn->autocommit(FALSE);
